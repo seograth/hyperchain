@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+api:
+build:
+context: ./api
+dockerfile: Dockerfile
+ports:
+    - "8080:8080"
+volumes:
+    - ./api:/app
+environment:
+    - FABRIC_CCP_PATH=/host_mnt/home/youruser/fabric-samples/test-network/organizations/peerOrganizations/org1.example.com/connection-org1.yaml
+    - FABRIC_WALLET_PATH=/app/wallet
+    - FABRIC_CHANNEL=mychannel
+    - FABRIC_CHAINCODE=medical
+    - FABRIC_IDENTITY=admin
+restart: unless-stopped
