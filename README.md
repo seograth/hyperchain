@@ -1,4 +1,4 @@
-# 🩺 Hyperchain – Medical Records POC on Hyperledger Fabric (Go)
+# Hyperchain – Medical Records POC on Hyperledger Fabric (Go)
 
 Hyperchain is a Proof-of-Concept blockchain-based medical record system built on **Hyperledger Fabric** using **Go chaincode** and a **Go backend API**. It is designed to provide a clean architecture, follow enterprise standards, and support easy onboarding for junior developers.
 
